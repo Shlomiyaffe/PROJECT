@@ -1,0 +1,101 @@
+html,
+body {
+  height: 100%;
+}
+
+
+body {
+  display: block;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  background-color:#4CAF50;
+}
+
+input {
+  width: 200px;
+    height: 40px;
+    padding: 5px;
+  border:0px;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type="text"],
+input[type="password"] {
+    color: gray;
+    background-color: whitesmoke;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;   
+  }
+
+.btnlogin{
+        width: 200px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+
+      
+}
+.linkToSign {
+        text-align: center;
+        text-decoration: none;
+        color: gray;
+        margin-top: 10px;
+        font-size: 12px;
+}
+
+
+.form-signin {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: white  ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  table , th , td {
+    border: black;
+      margin: auto;
+  }
+  
+  table  {
+   width:90%;
+  }
+  
+  th{
+    width:10%;
+  }
+  button {
+    background-color:rgb(222, 207, 207); 
+    color: black; 
+    margin: 4px 2px; 
+    border: none; 
+    cursor: pointer; 
+}
+  
+
+  
+  
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
