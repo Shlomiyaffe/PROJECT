@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,25 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <title>User page</title>
+    <title>Featured Products</title>
+    
   </head>
   <body>
     <nav>
+        <button class="products-button">
+            <i class="fas fa-user-lock"></i>Products</button>
+            
+            <button class="addNewProduct-button">
+              <i class="fas fa-user-lock"></i>Add New Product</button>
+
       <button id="sign-out" class="btnSignOut" type="button">Sign Out</button>
     </nav>
-   
-    <table>
-      <thead>
-        <tr>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody id="table-body-users" class="table-data"></tbody>
-    </table>
+ 
+    <div class="titleProducuts">
+      <h1 id="h1Admin">Admin Area</h1>
+      <p id="pAdmin">Here you can edit or delete products!</p>
+      </div>      
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Actions</th>
 
+          </tr>
+        </thead>
+        <tbody id="table-body-products" class="table-data">
+          <tr>
+            <td><img src="product-image.jpg" alt="Product Image"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            </tr>
+        </tbody>
+      </table>
+
+  
     <script type="module" src="app.js"></script>
   </body>
   <footer>
@@ -52,7 +76,4 @@
     </div>
   </footer>
 </html>
-
-
-
-  
+</html>

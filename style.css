@@ -3,85 +3,272 @@ body {
   height: 100%;
 }
 
-
 body {
   display: block;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   align-items: center;
-  background-color:#4CAF50;
+  background-color: rgba(255, 255, 255, 0.918);
 }
 
 input {
   width: 200px;
-    height: 40px;
-    padding: 5px;
-  border:0px;
+  height: 40px;
+  padding: 5px;
+  border: 0px;
   display: block;
   margin: 10px auto;
 }
 
 input[type="text"],
-input[type="password"] {
-    color: gray;
-    background-color: whitesmoke;
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"] {
+  color: gray;
+  background-color: whitesmoke;
+  border: 1px solid #ccc; 
 }
-
 
 label {
-    display: block;
-    margin-bottom: 5px;   
-  }
-
-.btnlogin{
-        width: 200px;
-        background-color: #4CAF50;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-
-      
+  display: block;
+  margin-bottom: 5px;
 }
+
+.btnSignIn {
+  width: 200px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
 .linkToSign {
-        text-align: center;
-        text-decoration: none;
-        color: gray;
-        margin-top: 10px;
-        font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: gray;
+  margin-top: 10px;
+  font-size: 12px;
 }
-
 
 .form-signin {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: white  ;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  table , th , td {
-    border: black;
-      margin: auto;
-  }
-  
-  table  {
-   width:90%;
-  }
-  
-  th{
-    width:10%;
-  }
-  button {
-    background-color:rgb(222, 207, 207); 
-    color: black; 
-    margin: 4px 2px; 
-    border: none; 
-    cursor: pointer; 
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
 
+table,
+th,
+td {
+  border: black;
+  margin: auto;
+}
+
+table {
+  width: 90%;
+}
+
+th {
+  width: 10%;
+}
+
+tr,
+td {
+  border: 1px solid rgb(202, 202, 202);
+}
+
+button {
+  background-color: rgb(222, 207, 207);
+  color: black;
+  margin: 4px 2px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btnSignOut {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btnSignOut:hover {
+  background-color: #c82333; 
+}
+
+nav {
+  display: flex; 
+  justify-content: space-between; 
+} 
+
+.adminProduct-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.products-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.addNewProduct-button {
+  background-color: #ff7b00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+#h1Admin {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#pAdmin { 
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 5px; 
   
+}
+p {
+  font-size: 15px;
+  margin-top: 5px; 
+}
+
+.titleProducuts {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  color: #333;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+ 
+  padding: 10px;
+}
+.grid-item {
+  background-color: white;
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  display: flex;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.productInfoContainer {
+  padding: 2px 16px;
+}
+
+.cardImage {
+  width: 230px;
+}
+
+h6{
+  font-size: 15px;
+}
+
+
+
+ footer {
+  background-color: rgba(106, 119, 115, 1);
+  padding: 10px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 30px;
+  
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.footer-logo {
+  max-width: 90px;
+  height: auto;
+} 
+
+.social-media-container {
+  display: flex;
+  justify-content: right;
+}
+
+.fa {
+  color: white;
+  padding: 1px;
+  font-size: 25pxx;
+  width: 50px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
   
   
 

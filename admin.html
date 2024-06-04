@@ -1,74 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>REGISTER</title>
+    <title>Creat Product</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
+  <h1 id="h1Admin">Admin Area</h1>
+  <p id="pAdmin">Here you can add and edit products!</p>
   <body>
     <div class="bg"></div>
+
     <main class="form-signin">
-      <form id="form">
+      <form id="product-edit-form">
         <div class="divForm">
-          <h1 id="h1Admin">Welcome</h1>
-          <p id="pAdmin">Please register using the form below</p>
 
-        
-          
-          <label for="name"></label>
+          <label for="image"></label>
+          <input type="url"
+           id="imageUrl" 
+           name="imageUrl" 
+           required placeholder="Image">
+
+          <label for="Product Name"></label>
           <input
             type="text"
             class="form-control"
-            placeholder="First Name"
-            id="firstName"
+            placeholder="Product Name"
+            id="ProductName"
             required
-            autocomplete="username"
           />
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Last Name"
-            id="lastName"
+      
+          <label for="Price"></label>
+          <input type="number" min="1" step="any" 
+            class="price"
+            placeholder="Price"
+            id="price"
             required
-            autocomplete="username"
           />
 
-          <label for="password"></label>
+          <label for="descriptionProduct"></label>
           <input
-            type="password"
-            class="password"
-            placeholder="Password"
-            id="password"
-            required
-            autocomplete="current-password"
-          />
-
-          <label for="email"></label>
-          <input
-            type="email"
-            class="email"
-            placeholder="Email address"
-            id="email"
-            required
-          />
+          type="text"
+          class="form-control"
+          placeholder="Description Product"
+          id="descriptionProduct"
+          required>
+        </input>
         </div>
 
         <div style="text-align: center; margin-top: 20px">
-          <button class="btnSignIn" type="button" onclick="signUp()">
-            CREATE
+          <button class="btnSignIn" type="button" onclick="onProductFormSaveBtnClick()">
+            SAVE
           </button>
         </div>
       </form>
-      <div class="linkToSign divLink">
-        <a href="Sign-in.html" class="linkToSign"
-          >Already registered? Sign In</a
-        >
-      </div>
     </main>
 
     <script type="module" src="app.js"></script>
+    <script type="module" src="product.js"></script>
+
   </body>
   <footer>
     <div class="container">
@@ -96,4 +87,7 @@
     </div>
   </footer>
 </html>
-</html>
+
+
+
+  

@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>LOGIN</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <title>Featured Products</title>
 </head>
+
 <body>
+  <nav>
+    <button class="adminProduct-button">
+      <i class="fas fa-user-lock"></i>Admin Area</button>
+    <button id="sign-out" class="btnSignOut" type="button">Sign Out</button>
+  </nav>
+ 
+  <div class="titleProducuts">
+    <h1>Featured Products</h1>
+    <p>Check out of favourite products of the month.</p>
+  </div>
 
-    <div class="bg">
-    </div>
-  
-    <main class="form-signin">
-  
-      <form id="sign-in-form">
-    <div class="divForm">
-      <h1 id="h1Admin">Welcome</h1>
-        <label for="email"></label>
-        <input  type="email" class="form-control" placeholder="Email" id="email" required>
 
-        <label for="password"></label>
-        <input type="password" class="form-control" placeholder="Password" id="password" required>
-    </div>
+  <div id="products-container" class="grid-container">
+    
 
-        <div style="text-align: center; margin-top: 20px;">
-          <button class="btnSignIn" type="button" onclick="signInWithEmail()">LOGIN</button>
 
-        </div>
-      </form>
-      <div class="linkToSign divLink">
-        <a href="sign-up.html" class="linkToSign">Not registered? Creat an account</a>
-      </div>
-    </main>
-  
-  
+
+  </div>
+
 
   <script type="module" src="app.js"></script>
-
 </body>
 <footer>
   <div class="container">
@@ -65,5 +58,5 @@
   </div>
 </footer>
 </html>
-</html>
 
+</html>
